@@ -1,0 +1,25 @@
+:local .miniSpacing {
+  margin-bottom: 8px;
+}
+
+:local .iconPrime {
+  height: 19px;
+  width: 54px;
+  vertical-align: center;
+}
+
+
+:local .price {
+  color: #B12704;
+  font-size: 17px;
+}
+
+:local .details {
+  display: block;
+  color: #0066c0;
+}
+
+:local .inStock {
+  color: #008a00;
+  font-size: 17px;
+}

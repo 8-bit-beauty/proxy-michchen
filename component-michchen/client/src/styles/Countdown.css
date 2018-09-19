@@ -1,0 +1,12 @@
+.stylesMain {
+  margin: 1em 0;
+}
+
+.stylesBold {
+  font-weight: 700;
+}
+
+.stylesGreen {
+  font-weight: 700;
+  color: green;
+}

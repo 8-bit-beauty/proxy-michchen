@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>FEC Demo</title>
+  </head>
+  <body>
+    <!-- a div for each of our components -->
+    <!-- <div id="Info"></div> -->
+    <div id="Checkout"></div>
+    <div id="relatedItems"></div>
+    <div id="Reviews"></div>
+
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+
+    <!-- matt -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/bundle/bundle.js"></script>
+    <!-- sonia -->
+    <!-- <script src="https://s3.amazonaws.com/fec-proxy/bundle.js"></script> -->
+    <!-- alex -->
+    <script src="https://s3-us-west-1.amazonaws.com/avh-fec-component/bundle.js"></script>
+
+    <script>
+      ReactDOM.render(
+        React.createElement(Checkout),
+        document.getElementById('Checkout')
+      );
+      // ReactDOM.render(
+      //   React.createElement(relatedItems),
+      //   document.getElementById('relatedItems')
+      // );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews')
+      );
+    </script>
+  </body>
+</html>
