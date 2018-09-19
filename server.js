@@ -4,8 +4,10 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 9002;
 
+
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
+console.log(__dirname);
 
 app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`);

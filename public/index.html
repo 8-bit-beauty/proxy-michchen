@@ -3,39 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/parmezon/style.css">
+    <style type="text/css">
+      body {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: 1440px auto;
+      }
+    </style>
     <title>FEC Demo</title>
   </head>
   <body>
     <!-- a div for each of our components -->
-    <!-- <div id="Info"></div> -->
-    <div id="Checkout"></div>
+    <div style="display:flex">
+      <div id="ProductInfo"></div>
+      <div id="Checkout"></div>
+    </div>
     <div id="relatedItems"></div>
     <div id="Reviews"></div>
 
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
 
+    <!-- michelle -->
+    <!-- <script src="../../mine/hrsf102-front-end-capstone/client/dist/bundle.js"></script> -->
+    <script src="https://s3-us-west-1.amazonaws.com/parmezon/bundle.js"></script>
     <!-- matt -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/bundle/bundle.js"></script>
-    <!-- sonia -->
-    <!-- <script src="https://s3.amazonaws.com/fec-proxy/bundle.js"></script> -->
     <!-- alex -->
     <script src="https://s3-us-west-1.amazonaws.com/avh-fec-component/bundle.js"></script>
+    <!-- sonia -->
+    <!-- <script src="https://s3.amazonaws.com/fec-proxy/bundle.js"></script> -->
 
     <script>
       ReactDOM.render(
+        React.createElement(ProductInfo),
+        document.getElementById('ProductInfo')
+      );
+      ReactDOM.render(
         React.createElement(Checkout),
         document.getElementById('Checkout')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews')
       );
       // ReactDOM.render(
       //   React.createElement(relatedItems),
       //   document.getElementById('relatedItems')
       // );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('Reviews')
-      );
     </script>
   </body>
 </html>

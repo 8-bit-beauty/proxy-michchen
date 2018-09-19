@@ -39,14 +39,18 @@ exports.insertRow = (query, cb) => {
 };
 
 exports.getProduct = (id, cb) => {
-  console.log('exports.getProduct');
+  // console.log('exports.getProduct');
   console.log(`SELECT * FROM products WHERE id=${id}`);
 
   con.query(`SELECT * FROM products WHERE id=${id}`, (err, result) => {
-    console.log('selected sucessfully from products');
+
+    console.log(`successfully selected "${result[0].productName}"`);
+    // console.log('selected sucessfully from products');
+
 
     const productObj = result[0];
     con.query(`SELECT * FROM images WHERE productId=${id}`, (error, res) => {
+
       const imgArr = {};
       for (let i = 0; i < res.length; i += 1) {
         // init category object if does not exist

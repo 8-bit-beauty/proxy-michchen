@@ -4,6 +4,9 @@ const path = require('path');
 const app = express();
 const db = require('./database/db.js');
 
+const cors = require('cors');
+
+app.use(cors());
 
 app.use('/', express.static(path.join(__dirname, '/client/dist')));
 // app.use('/', express.static(__dirname + '/client/dist'));
@@ -21,5 +24,6 @@ app.get('/test', (req, res) => {
 });
 
 app.listen(process.env.PORT || 9001, () => {
+// app.listen(9001, () => {
   console.log(`listening on ${process.env.PORT || 9001}`);
 });
