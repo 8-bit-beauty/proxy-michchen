@@ -8,9 +8,15 @@
   </head>
   <body>
     <!-- a div for each of our components -->
-    <div style="display:flex; flex:1;">
-      <div id="ProductInfo">ProductInfo goes here</div>
-      <div id="Checkout" style="display:flex; flex:1;">Checkout goes here</div>
+    <img src="https://s3-us-west-1.amazonaws.com/parmezon/amazon_header.png" style="width:100%;" />
+    <div style="
+        display:flex;
+        flex:1;
+        justify-content: center;
+        max-width:100%;
+      ">
+      <div id="ProductInfo"></div>
+      <div id="Checkout" style="background-color:none;width:19vw"></div>
     </div>
     <div id="relatedItems"></div>
     <div id="Reviews"></div>
@@ -31,18 +37,9 @@
 
     <script>
       ReactDOM.render(
-        //keep this quoteless
         React.createElement(Checkout),
         document.getElementById('Checkout')
       );
-      ReactDOM.render(
-        React.createElement(ProductInfo),
-        document.getElementById('ProductInfo')
-      );
-      // ReactDOM.render(
-      //   React.createElement(Reviews),
-      //   document.getElementById('Reviews')
-      // );
       ReactDOM.render(
         React.createElement(relatedItems),
         document.getElementById('relatedItems')

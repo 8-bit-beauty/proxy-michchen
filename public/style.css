@@ -15,21 +15,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 body {
-  /*margin-top:300px;*/
-  /* background-image: url('https://s3-us-west-1.amazonaws.com/parmezon/bglong50.png'); */
-  /* background-repeat: no-repeat; */
-  /*background-size: 1440px auto; */
-  /* background-size: 100% auto; */
-}
-
-#ProductInfo {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  line-height: 19px;
-  /* margin: 6px 18px; */
-  color: #111111;
-  font-size: 13px;
-  /* display:flex */
+  margin:0;
 }
 
 #ProductInfo a {
@@ -41,69 +27,6 @@ body {
   text-decoration: underline;
 }
 
-/* which color is chosen */
-/* .selectedVariation {
-  outline: 1px solid #e77600 !important;
-  box-shadow: 0px 0px 2px 2px #fa7;
-} */
-
-/* used for hiding popups when no mouseover */
-#ProductInfo .hide {
-  display: none;
-}
-
-/* popup below target */
-/* used for ratings onhover */
-#ProductInfo .popupdown {
-  left: -100%;
-  margin-left: 30%;
-  margin-top: 5px;
-}
-#ProductInfo .popupArrow_down { border-bottom-color: #ffffff !important;}
-#ProductInfo .popupArrowBorder_down {
-  top:-21px;
-  left: 50%;
-  margin-left: -10px !important;
-  border-bottom-color: #000000 !important;
-}
-
-/* popup on top */
-/* used for Amazon's Choice hover */
-#ProductInfo .popupup {
-  /* top: -100px; */
-  /* left: 50%; */
-  /* margin-left: -100%; */
-}
-#ProductInfo .popupArrow_up { border-top-color: #ffffff !important;}
-#ProductInfo .popupArrowBorder_up {
-  bottom: -23px;
-  left: 50%;
-  margin-left: -10px !important;
-  border-top-color: #000000 !important;
-}
-
-/* right */
-/* this is not actually used */
-#ProductInfo .popupright {
-  left: 120%;
-}
-#ProductInfo .popupArrow_right { border-right-color: #ffffff !important;}
-#ProductInfo .popupArrowBorder_right {
-  top: 50%;
-  margin-top: -10px !important;
-  left: -21px;
-  border-right-color: #000000 !important;
-}
-
-/* popup on the left side */
-/* this is not actually used */
-#ProductInfo .popupleft {
-  right: 100%;
-}
-#ProductInfo .popupArrow_left { border-left-color: #ffffff !important;}
-#ProductInfo .popupArrowBorder_left {
-  top: 50%;
-  margin-top: -10px !important;
-  right: -22px;
-  border-left-color: #000000 !important;
+#Reviews {
+  margin-left: 10vmin;
 }
